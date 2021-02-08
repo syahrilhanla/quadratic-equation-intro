@@ -31,11 +31,15 @@ function App() {
 					</h3>{" "}
 					<Paragraph text={texts[0]} />
 					<br />
-					<EquationsData text={equations[0]} />
+					<p style={{ textAlign: "center" }}>
+						<EquationsData text={equations[0]} />
+					</p>
 					<br />
 					<p>which is equivalent to the equation</p>
 					<br />
-					<EquationsData text={equations[1]} />
+					<p style={{ textAlign: "center" }}>
+						<EquationsData text={equations[1]} />
+					</p>
 					<br />
 				</div>
 
@@ -60,12 +64,16 @@ function App() {
 						</span>
 						<span style={{ float: "right" }}>
 							<EquationsData text={equations[12]} display={false} /> are
-							constants, a != 0
+							constants, <EquationsData text={equations[13]} display={false} />
 						</span>
 					</p>
 					<br />
-					<EquationsData text={equations[9]} /> and{" "}
-					<EquationsData text={equations[10]} />
+					<br />
+					<p style={{ textAlign: "center" }}>
+						<span style={{ float: "left" }}>as</span>
+
+						<EquationsData text={equations[9]} display={false} />
+					</p>
 					<br />
 					<IntroductionClosing />
 					<br />

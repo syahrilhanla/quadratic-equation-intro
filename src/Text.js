@@ -39,8 +39,6 @@ export const MainTitle = () => (
 export const IntroductionClosing = () => {
 	return (
 		<>
-			as formula ABC
-			<br />
 			<p>
 				was published by Henry Heaton in The American Mathematical Monthly (see
 				information at

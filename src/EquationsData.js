@@ -14,6 +14,7 @@ export const equations = [
 	"ax^2 = c",
 	"ax^2 + bx = c ",
 	"a, b, c",
+	"a \\neq 0",
 ];
 console.log(equations);
 
