@@ -1,17 +1,21 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 70%;
+	margin: auto;
 }
 
 .main-title {
-  margin: 75% 0px;
-  text-align: center;
-  color: black;
+	color: black;
+	margin: 1rem 2rem;
 }
 
 li {
-    margin-left: 10px;
-    display: list-item;
-    list-style-type: disc;
- }
+	margin-left: 10px;
+	display: list-item;
+	list-style-type: disc;
+}
