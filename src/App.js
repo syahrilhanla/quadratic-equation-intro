@@ -1,4 +1,5 @@
 import "./App.css";
+import { MathComponent } from "mathjax-react";
 import { BulletList } from "./BulletList";
 import { contents, Header, IntroductionClosing, MainTitle } from "./Text";
 import { Paragraph } from "./Paragraph";
@@ -7,8 +8,6 @@ import { EquationsData, equations } from "./EquationsData";
 
 function App() {
 	const txtContents = contents.map((content) => content);
-	console.log(txtContents);
-	console.log("equations :>> ", equations);
 
 	return (
 		<div className='App'>
@@ -41,17 +40,36 @@ function App() {
 				</div>
 
 				<div>
-					<Paragraph text={texts[1]} />
+					<p>
+						In the 8th Century BC quadratic equations of the form{" "}
+						{<MathComponent tex={String.raw`ax^2 = c`} display={false} />}
+						and{" "}
+						{<MathComponent tex={String.raw`ax2 + bx = c`} display={false} />}
+						were explored in ancient India, using geometric methods. Babylonian
+						mathematicians from circa 400 BC and Chinese mathematicians from
+						circa 200 BC used the method of completing the square (
+						{<i>see Section F4.3</i>}) to solve quadratic equations with
+						positive roots, but did not have a general formula.
+					</p>
 					<br />
 					<Paragraph text={texts[2]} />
 					<br />
-					<EquationsData text={equations[2]} />
+					<p style={{ textAlign: "center" }}>
+						<span>
+							<EquationsData text={equations[11]} display={false} />{" "}
+						</span>
+						<span style={{ float: "right" }}>
+							<EquationsData text={equations[12]} display={false} /> are
+							constants, a != 0
+						</span>
+					</p>
+					<br />
+					<EquationsData text={equations[9]} /> and{" "}
+					<EquationsData text={equations[10]} />
 					<br />
 					<IntroductionClosing />
 					<br />
-
 					{/* Introduction */}
-
 					{/* Key points and principles */}
 					<div>
 						<h3>
@@ -74,19 +92,28 @@ function App() {
 										(iii) <b>completing the square</b> , where we can write
 										{/* insert equation here */}
 									</li>
-									<li>
-										Note that if (x − a)(x − b) = 0 , then either x − a = 0 or x
-										− b = 0, giving x = a or x = b
-									</li>
-									<li>
-										Quadratic equations have 2, 1 or 0 real roots according to
-										the value of " b2 − 4ac ":
-										<ul>
-											<li>If b2 {`>`} 4ac, there are 2 real distinct roots</li>
-											<li>If b2 = 4ac , there is 1 (repeated) real root</li>
-											<li>If b2 {`<`} 4ac, there are no real roots.</li>
-										</ul>
-									</li>
+								</ul>
+							</li>
+							<li>
+								<p>
+									{<span>{<EquationsData text={equations[4]} />}</span>}{" "}
+									{`, then
+									either`}{" "}
+									<span>{<EquationsData text={equations[5]} />}</span>
+									{`or`}
+									<span>{<EquationsData text={equations[6]} />}</span>
+									{`, giving`}
+									<span>{<EquationsData text={equations[7]} />}</span> {`or`}
+									<span>{<EquationsData text={equations[8]} />}</span>
+								</p>
+							</li>
+							<li>
+								Quadratic equations have 2, 1 or 0 real roots according to the
+								value of " b2 − 4ac ":
+								<ul>
+									<li>If b2 {`>`} 4ac, there are 2 real distinct roots</li>
+									<li>If b2 = 4ac , there is 1 (repeated) real root</li>
+									<li>If b2 {`<`} 4ac, there are no real roots.</li>
 								</ul>
 							</li>
 						</ul>
