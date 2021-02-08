@@ -1,7 +1,13 @@
 import "./App.css";
 import { MathComponent } from "mathjax-react";
 import { BulletList } from "./BulletList";
-import { contents, Header, IntroductionClosing, MainTitle } from "./Text";
+import {
+	contents,
+	Header,
+	IntroductionClosing,
+	MainTitle,
+	Introduction,
+} from "./Text";
 import { Paragraph } from "./Paragraph";
 import { texts } from "./paragraphData";
 import { EquationsData, equations } from "./EquationsData";
@@ -25,159 +31,108 @@ function App() {
 				</div>
 
 				{/* INTRODUCTION */}
+				<Introduction />
+				{/* Introduction */}
+
+				{/* Key points and principles */}
 				<div>
 					<h3>
-						<i>Introduction</i>
+						<i>Key points and principles</i>
 					</h3>{" "}
-					<Paragraph text={texts[0]} />
 					<br />
-					<p style={{ textAlign: "center" }}>
-						<EquationsData text={equations[0]} />
-					</p>
-					<br />
-					<p>which is equivalent to the equation</p>
-					<br />
-					<p style={{ textAlign: "center" }}>
-						<EquationsData text={equations[1]} />
-					</p>
-					<br />
-				</div>
-
-				<div>
-					<p>
-						In the 8th Century BC quadratic equations of the form{" "}
-						{<MathComponent tex={String.raw`ax^2 = c`} display={false} />}
-						and{" "}
-						{<MathComponent tex={String.raw`ax2 + bx = c`} display={false} />}
-						were explored in ancient India, using geometric methods. Babylonian
-						mathematicians from circa 400 BC and Chinese mathematicians from
-						circa 200 BC used the method of completing the square (
-						{<i>see Section F4.3</i>}) to solve quadratic equations with
-						positive roots, but did not have a general formula.
-					</p>
-					<br />
-					<Paragraph text={texts[2]} />
-					<br />
-					<p style={{ textAlign: "center" }}>
-						<span>
-							<EquationsData text={equations[11]} display={false} />{" "}
-						</span>
-						<span style={{ float: "right" }}>
-							<EquationsData text={equations[12]} display={false} /> are
-							constants, <EquationsData text={equations[13]} display={false} />
-						</span>
-					</p>
-					<br />
-					<br />
-					<p style={{ textAlign: "center" }}>
-						<span style={{ float: "left" }}>as</span>
-
-						<EquationsData text={equations[9]} display={false} />
-					</p>
-					<br />
-					<IntroductionClosing />
-					<br />
-					{/* Introduction */}
-					{/* Key points and principles */}
-					<div>
-						<h3>
-							<i>Key points and principles</i>
-						</h3>{" "}
-						<br />
-						<ul>
-							<li>
-								There are three methods of solving quadratic equations:
-								<ul>
-									<li>
-										(i) <b>quadratic factorization</b>, where we can write
-										{/* insert equation here */}
-									</li>
-									<li>
-										(ii) <b>formula</b>
-										{/* insert equation here */}
-									</li>
-									<li>
-										(iii) <b>completing the square</b> , where we can write
-										{/* insert equation here */}
-									</li>
-								</ul>
-							</li>
-							<li>
-								<p>
-									{<span>{<EquationsData text={equations[4]} />}</span>}{" "}
-									{`, then
+					<ul>
+						<li>
+							There are three methods of solving quadratic equations:
+							<ul>
+								<li>
+									(i) <b>quadratic factorization</b>, where we can write
+									{/* insert equation here */}
+								</li>
+								<li>
+									(ii) <b>formula</b>
+									{/* insert equation here */}
+								</li>
+								<li>
+									(iii) <b>completing the square</b> , where we can write
+									{/* insert equation here */}
+								</li>
+							</ul>
+						</li>
+						<li>
+							<p>
+								{<span>{<EquationsData text={equations[4]} />}</span>}{" "}
+								{`, then
 									either`}{" "}
-									<span>{<EquationsData text={equations[5]} />}</span>
-									{`or`}
-									<span>{<EquationsData text={equations[6]} />}</span>
-									{`, giving`}
-									<span>{<EquationsData text={equations[7]} />}</span> {`or`}
-									<span>{<EquationsData text={equations[8]} />}</span>
-								</p>
-							</li>
-							<li>
-								Quadratic equations have 2, 1 or 0 real roots according to the
-								value of " b2 − 4ac ":
-								<ul>
-									<li>If b2 {`>`} 4ac, there are 2 real distinct roots</li>
-									<li>If b2 = 4ac , there is 1 (repeated) real root</li>
-									<li>If b2 {`<`} 4ac, there are no real roots.</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<h3>
-							<i>Facts to remember</i>
-						</h3>{" "}
-						<br />
-						<ul>
-							<li>
-								If (x − a)(x − b) = 0 then x = a or x = b
-								{/* insert equation here*/}
-							</li>
-							<li>
-								The formula for solving the quadratic equation
-								{/* insert equation here*/}
-								<p style={{ textAlign: "center" }}>ax2 + bx + c = 0</p> is
-								{/* insert equation here*/} formula abc
-							</li>
-							<li>
-								The number of real roots of a quadratic is
-								<p>2 if b2 {`>`} 4ac</p>
-								<p>1 if b2 = 4ac</p>
-								<p>0 if b2 {`<`} 4ac</p>
-							</li>
-						</ul>
-					</div>
-					<div>
-						<h3>
-							<i>Facts to remember</i>
-						</h3>{" "}
-						<br />
-						<span>
-							<i>Quadratic factorization</i>
-						</span>
-						<p>This is when you can write a quadratic formula in the form</p>
-						<br />
-						<p>ax bx c a x p x q 2 + += ( − )( − )</p>
-						<br />
-						<span>
-							<i>Formula for solving quadratic equation</i>
-						</span>
-						<p>The formula for solving the quadratic equation</p>
-						<br />
-						<p>ax bx c 2 + += 0</p>
-						<br />
-						<p>is </p>
-						{/* insert equation here */}
-						<br />
-						<span>
-							<i>Formula for solving quadratic equation</i>
-						</span>
-						<p>The formula for solving the quadratic equation</p>
-						<br />
-					</div>
+								<span>{<EquationsData text={equations[5]} />}</span>
+								{`or`}
+								<span>{<EquationsData text={equations[6]} />}</span>
+								{`, giving`}
+								<span>{<EquationsData text={equations[7]} />}</span> {`or`}
+								<span>{<EquationsData text={equations[8]} />}</span>
+							</p>
+						</li>
+						<li>
+							Quadratic equations have 2, 1 or 0 real roots according to the
+							value of " b2 − 4ac ":
+							<ul>
+								<li>If b2 {`>`} 4ac, there are 2 real distinct roots</li>
+								<li>If b2 = 4ac , there is 1 (repeated) real root</li>
+								<li>If b2 {`<`} 4ac, there are no real roots.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>
+						<i>Facts to remember</i>
+					</h3>{" "}
+					<br />
+					<ul>
+						<li>
+							If (x − a)(x − b) = 0 then x = a or x = b
+							{/* insert equation here*/}
+						</li>
+						<li>
+							The formula for solving the quadratic equation
+							{/* insert equation here*/}
+							<p style={{ textAlign: "center" }}>ax2 + bx + c = 0</p> is
+							{/* insert equation here*/} formula abc
+						</li>
+						<li>
+							The number of real roots of a quadratic is
+							<p>2 if b2 {`>`} 4ac</p>
+							<p>1 if b2 = 4ac</p>
+							<p>0 if b2 {`<`} 4ac</p>
+						</li>
+					</ul>
+				</div>
+				<div>
+					<h3>
+						<i>Facts to remember</i>
+					</h3>{" "}
+					<br />
+					<span>
+						<i>Quadratic factorization</i>
+					</span>
+					<p>This is when you can write a quadratic formula in the form</p>
+					<br />
+					<p>ax bx c a x p x q 2 + += ( − )( − )</p>
+					<br />
+					<span>
+						<i>Formula for solving quadratic equation</i>
+					</span>
+					<p>The formula for solving the quadratic equation</p>
+					<br />
+					<p>ax bx c 2 + += 0</p>
+					<br />
+					<p>is </p>
+					{/* insert equation here */}
+					<br />
+					<span>
+						<i>Formula for solving quadratic equation</i>
+					</span>
+					<p>The formula for solving the quadratic equation</p>
+					<br />
 				</div>
 			</div>
 		</div>
