@@ -14,8 +14,33 @@
 	margin: 1rem 2rem;
 }
 
-li {
+/* li {
 	margin-left: 10px;
 	display: list-item;
-	list-style-type: disc;
+}
+
+ol > li:before {
+	counter-increment: list;
+	content: counter(list, lower-alpha) ") ";
+	position: absolute;
+	left: -1.4em;
+} */
+
+ol {
+	counter-reset: list;
+}
+ol > li {
+	list-style: none;
+	position: relative;
+}
+ol > li:before {
+	counter-increment: list;
+	content: "(" counter(list, lower-roman) ") ";
+	position: absolute;
+	left: -2rem;
+	text-align: center;
+}
+
+.key-points {
+	margin-left: 3rem;
 }

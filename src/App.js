@@ -43,20 +43,45 @@ function App() {
 					<ul>
 						<li>
 							There are three methods of solving quadratic equations:
-							<ul>
+							<ol type='i' className='key-points'>
 								<li>
-									(i) <b>quadratic factorization</b>, where we can write
-									{/* insert equation here */}
+									<b>quadratic factorization</b>, where we can write
+									<br />
+									<div style={{ marginLeft: "40%" }}>
+										<p>
+											<EquationsData text={equations[14]} display={false} />{" "}
+											when <EquationsData text={"p"} display={false} /> and{" "}
+											<EquationsData text={"q"} display={false} /> are rational
+											numbers <br /> <br />
+											<span>
+												which has solution{" "}
+												<EquationsData text={"x = p"} display={false} /> or{" "}
+												<EquationsData text={"x = q"} display={false} />
+											</span>
+										</p>
+									</div>
 								</li>
+								<br />
+								<br />
 								<li>
-									(ii) <b>formula</b>
-									{/* insert equation here */}
+									<b>formula</b>
+									<span style={{ marginLeft: "30%" }}>
+										<EquationsData text={equations[9]} display={false} />
+									</span>
 								</li>
+								<br />
+								<br />
 								<li>
-									(iii) <b>completing the square</b> , where we can write
-									{/* insert equation here */}
+									<b>completing the square</b> , where we can write
+									<br />
+									<br />
+									<p style={{ textAlign: "center" }}>
+										<EquationsData text={equations[15]} display={false} />
+									</p>
 								</li>
-							</ul>
+							</ol>
+							<br />
+							<br />
 						</li>
 						<li>
 							<p>

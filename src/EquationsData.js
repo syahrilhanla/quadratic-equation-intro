@@ -15,6 +15,8 @@ export const equations = [
 	"ax^2 + bx = c ",
 	"a, b, c",
 	"a \\neq 0",
+	"ax^2 + bx + c = a(x-p)(x-q)",
+	"ax^2 + bx + c = a( x + \\frac{b}{2a})",
 ];
 console.log(equations);
 
