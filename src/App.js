@@ -89,7 +89,7 @@ equation but it was not until 1896 that the first reference to the general solut
                   {/* insert equation here */}
                 </li>
                 <li>
-                  Note that if (x − a)(x − b) = 0 , then either x − a = 0 or x − b = 0, giving x = a or x = b .
+                  Note that if (x − a)(x − b) = 0 , then either x − a = 0 or x − b = 0, giving x = a or x = b
                 </li>
                 <li>
                   Quadratic equations have 2, 1 or 0 real roots according to the value of " b2 − 4ac ":
