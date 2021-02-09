@@ -16,7 +16,12 @@ export const equations = [
 	"a, b, c",
 	"a \\neq 0",
 	"ax^2 + bx + c = a(x-p)(x-q)",
-	"ax^2 + bx + c = a( x + \\frac{b}{2a})",
+	"ax^2 + bx + c = a( x + \\frac{b}{2a})^2 - \\frac{b^2}{4a} + c",
+	"b^2 − 4ac",
+	"b^2 < 4ac",
+	"b^2 = 4ac",
+	"b^2 < 4ac",
+	"ax^2 + bx + c = 0",
 ];
 console.log(equations);
 

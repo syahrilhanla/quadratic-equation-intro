@@ -118,4 +118,138 @@ export const IntroductionClosing = () => {
 	);
 };
 
+export const FactsToRemember = () => {
+	return (
+		<>
+			<h3>
+				<i>Facts to remember</i>
+			</h3>{" "}
+			<ul>
+				<li>
+					If <EquationsData text={equations[4]} display={false} /> then{" "}
+					<EquationsData text={equations[5]} display={false} /> or
+					<EquationsData text={equations[6]} display={false} />
+				</li>
+				<li>
+					The formula for solving the quadratic equation
+					<p style={{ textAlign: "center" }}>
+						<EquationsData text={equations[20]} display={false} />
+					</p>
+					<span style={{ marginLeft: "30%" }}>is </span> <br />
+					<p style={{ textAlign: "center" }}>
+						<EquationsData text={equations[9]} display={false} />
+					</p>
+				</li>
+				<li>
+					The number of real roots of a quadratic is
+					<div style={{ textAlign: "center" }}>
+						<p>
+							2 if <EquationsData text={equations[17]} display={false} />
+						</p>
+						<p>
+							1 if <EquationsData text={equations[18]} display={false} />
+						</p>
+						<p>
+							0 if <EquationsData text={equations[19]} display={false} />
+						</p>
+					</div>
+				</li>
+			</ul>
+		</>
+	);
+};
+
+export const KeyToRemember = () => {
+	return (
+		<>
+			<h3>
+				<i>Key points and principles</i>
+			</h3>{" "}
+			<br />
+			<ul>
+				<ThreeMethods />
+				<li>
+					<p>
+						Note that if
+						<EquationsData text={equations[4]} display={false} />, then either
+						<EquationsData text={equations[5]} display={false} /> or
+						<EquationsData text={equations[6]} display={false} />, giving
+						<EquationsData text={equations[7]} display={false} /> or
+						<EquationsData text={equations[8]} display={false} />.
+					</p>
+				</li>
+				<li>
+					Quadratic equations have 2, 1 or 0 real roots according to the value
+					of "<EquationsData text={equations[16]} display={false} />
+					":
+					<ol className='key-points'>
+						<li>
+							If <EquationsData text={equations[17]} display={false} />, there
+							are 2 real distinct roots
+						</li>
+						<li>
+							If <EquationsData text={equations[18]} display={false} /> , there
+							is 1 (repeated) real root
+						</li>
+						<li>
+							If <EquationsData text={equations[19]} display={false} />, there
+							are no real roots.
+						</li>
+					</ol>
+				</li>
+			</ul>
+			<br />
+		</>
+	);
+};
+
+export const ThreeMethods = () => {
+	return (
+		<>
+			<li>
+				There are three methods of solving quadratic equations:
+				<ol className='key-points'>
+					<li>
+						<b>quadratic factorization</b>, where we can write
+						<br />
+						<div style={{ marginLeft: "40%" }}>
+							<p>
+								<EquationsData text={equations[14]} display={false} /> when{" "}
+								<EquationsData text={"p"} display={false} /> and{" "}
+								<EquationsData text={"q"} display={false} /> are rational
+								numbers <br /> <br />
+								<span>
+									which has solution{" "}
+									<EquationsData text={"x = p"} display={false} /> or{" "}
+									<EquationsData text={"x = q"} display={false} />
+								</span>
+							</p>
+						</div>
+					</li>
+					<br />
+					<br />
+					<li>
+						<b>formula</b>
+						<span style={{ marginLeft: "30%" }}>
+							<EquationsData text={equations[9]} display={false} />
+						</span>
+					</li>
+					<br />
+					<br />
+					<li>
+						<b>completing the square</b> , where we can write
+						<br />
+						<br />
+						<p style={{ textAlign: "center" }}>
+							<EquationsData text={equations[15]} display={false} />
+						</p>
+					</li>
+				</ol>
+				<br />
+				<br />
+			</li>
+		</>
+	);
+};
+
 console.log(contents);

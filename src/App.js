@@ -7,6 +7,9 @@ import {
 	IntroductionClosing,
 	MainTitle,
 	Introduction,
+	ThreeMethods,
+	KeyToRemember,
+	FactsToRemember,
 } from "./Text";
 import { Paragraph } from "./Paragraph";
 import { texts } from "./paragraphData";
@@ -36,104 +39,17 @@ function App() {
 
 				{/* Key points and principles */}
 				<div>
-					<h3>
-						<i>Key points and principles</i>
-					</h3>{" "}
-					<br />
-					<ul>
-						<li>
-							There are three methods of solving quadratic equations:
-							<ol type='i' className='key-points'>
-								<li>
-									<b>quadratic factorization</b>, where we can write
-									<br />
-									<div style={{ marginLeft: "40%" }}>
-										<p>
-											<EquationsData text={equations[14]} display={false} />{" "}
-											when <EquationsData text={"p"} display={false} /> and{" "}
-											<EquationsData text={"q"} display={false} /> are rational
-											numbers <br /> <br />
-											<span>
-												which has solution{" "}
-												<EquationsData text={"x = p"} display={false} /> or{" "}
-												<EquationsData text={"x = q"} display={false} />
-											</span>
-										</p>
-									</div>
-								</li>
-								<br />
-								<br />
-								<li>
-									<b>formula</b>
-									<span style={{ marginLeft: "30%" }}>
-										<EquationsData text={equations[9]} display={false} />
-									</span>
-								</li>
-								<br />
-								<br />
-								<li>
-									<b>completing the square</b> , where we can write
-									<br />
-									<br />
-									<p style={{ textAlign: "center" }}>
-										<EquationsData text={equations[15]} display={false} />
-									</p>
-								</li>
-							</ol>
-							<br />
-							<br />
-						</li>
-						<li>
-							<p>
-								{<span>{<EquationsData text={equations[4]} />}</span>}{" "}
-								{`, then
-									either`}{" "}
-								<span>{<EquationsData text={equations[5]} />}</span>
-								{`or`}
-								<span>{<EquationsData text={equations[6]} />}</span>
-								{`, giving`}
-								<span>{<EquationsData text={equations[7]} />}</span> {`or`}
-								<span>{<EquationsData text={equations[8]} />}</span>
-							</p>
-						</li>
-						<li>
-							Quadratic equations have 2, 1 or 0 real roots according to the
-							value of " b2 − 4ac ":
-							<ul>
-								<li>If b2 {`>`} 4ac, there are 2 real distinct roots</li>
-								<li>If b2 = 4ac , there is 1 (repeated) real root</li>
-								<li>If b2 {`<`} 4ac, there are no real roots.</li>
-							</ul>
-						</li>
-					</ul>
+					<KeyToRemember />
 				</div>
+				{/* Key points and principles */}
+				{/* Facts to remember */}
+				<div>
+					<FactsToRemember />
+				</div>
+				{/* Facts to remember */}
 				<div>
 					<h3>
-						<i>Facts to remember</i>
-					</h3>{" "}
-					<br />
-					<ul>
-						<li>
-							If (x − a)(x − b) = 0 then x = a or x = b
-							{/* insert equation here*/}
-						</li>
-						<li>
-							The formula for solving the quadratic equation
-							{/* insert equation here*/}
-							<p style={{ textAlign: "center" }}>ax2 + bx + c = 0</p> is
-							{/* insert equation here*/} formula abc
-						</li>
-						<li>
-							The number of real roots of a quadratic is
-							<p>2 if b2 {`>`} 4ac</p>
-							<p>1 if b2 = 4ac</p>
-							<p>0 if b2 {`<`} 4ac</p>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h3>
-						<i>Facts to remember</i>
+						<i>Glossary of Terms</i>
 					</h3>{" "}
 					<br />
 					<span>
