@@ -58,8 +58,7 @@ export const Introduction = () => {
 				<br />
 				<br />
 				<p style={{ textAlign: "center" }}>
-					<span style={{ float: "left" }}>as</span>
-
+					<span style={{ marginRight: "5%" }}>as</span>
 					<EquationsData text={equations[9]} display={false} />
 				</p>
 				<br />
@@ -76,7 +75,6 @@ export const Header = () => (
 		<h3>
 			<i>Learning Objectives</i>
 		</h3>{" "}
-		<br />
 		<p>
 			This unit is focused on methods of solving quadratic equations. After
 			completing Unit F4 you should{" "}
@@ -101,7 +99,7 @@ export const MainTitle = () => (
 
 export const IntroductionClosing = () => {
 	return (
-		<>
+		<div>
 			<p>
 				was published by Henry Heaton in The American Mathematical Monthly (see
 				information at
@@ -110,11 +108,11 @@ export const IntroductionClosing = () => {
 			<p style={{ textAlign: "center" }}>
 				http://en.wikipedia.org/wiki/Quadratic_equation
 			</p>
+			<span style={{ marginLeft: "30%" }}>and </span>
 			<p style={{ textAlign: "center" }}>
-				<span style={{ float: "left" }}>and </span>
 				http://www.jstor.org/stable/2971099?seq=1 )
 			</p>
-		</>
+		</div>
 	);
 };
 
@@ -124,7 +122,7 @@ export const FactsToRemember = () => {
 			<h3>
 				<i>Facts to remember</i>
 			</h3>{" "}
-			<ul>
+			<ul style={{ marginLeft: "1.9rem" }}>
 				<li>
 					If <EquationsData text={equations[4]} display={false} /> then{" "}
 					<EquationsData text={equations[5]} display={false} /> or
@@ -140,9 +138,10 @@ export const FactsToRemember = () => {
 						<EquationsData text={equations[9]} display={false} />
 					</p>
 				</li>
+				<br />
 				<li>
 					The number of real roots of a quadratic is
-					<div style={{ textAlign: "center" }}>
+					<div style={{ textAlign: "center" }} className='real-number-roots'>
 						<p>
 							2 if <EquationsData text={equations[17]} display={false} />
 						</p>
@@ -166,7 +165,7 @@ export const KeyToRemember = () => {
 				<i>Key points and principles</i>
 			</h3>{" "}
 			<br />
-			<ul>
+			<ul style={{ marginLeft: "1.9rem" }}>
 				<ThreeMethods />
 				<li>
 					<p>
@@ -178,11 +177,12 @@ export const KeyToRemember = () => {
 						<EquationsData text={equations[8]} display={false} />.
 					</p>
 				</li>
+				<br />
 				<li>
 					Quadratic equations have 2, 1 or 0 real roots according to the value
 					of "<EquationsData text={equations[16]} display={false} />
 					":
-					<ol className='key-points'>
+					<ol className='key-points real-number-roots '>
 						<li>
 							If <EquationsData text={equations[17]} display={false} />, there
 							are 2 real distinct roots

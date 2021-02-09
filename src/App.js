@@ -25,7 +25,7 @@ function App() {
 
 				<div>
 					<Header />
-					<ul>
+					<ul style={{ marginLeft: "1.9rem" }}>
 						{txtContents.map((text, index) => (
 							<BulletList text={text.content} key={index} />
 						))}
@@ -52,28 +52,41 @@ function App() {
 						<i>Glossary of Terms</i>
 					</h3>{" "}
 					<br />
-					<span>
+					<span style={{ marginRight: "25%" }}>
 						<i>Quadratic factorization</i>
 					</span>
-					<p>This is when you can write a quadratic formula in the form</p>
+					This is when you can write a quadratic formula in the form
 					<br />
-					<p>ax bx c a x p x q 2 + += ( − )( − )</p>
 					<br />
-					<span>
+					<p style={{ float: "right", marginRight: "30%" }}>
+						<EquationsData text={equations[14]} display={false} />
+					</p>
+					<br />
+					<br />
+					<span style={{ marginRight: "25%" }}>
 						<i>Formula for solving quadratic equation</i>
 					</span>
-					<p>The formula for solving the quadratic equation</p>
+					The formula for solving the quadratic equation
 					<br />
-					<p>ax bx c 2 + += 0</p>
 					<br />
-					<p>is </p>
-					{/* insert equation here */}
+					<p style={{ textAlign: "center" }}>
+						<EquationsData text={equations[20]} display={false} />
+					</p>
+					<span style={{ marginLeft: "30%" }}>is </span> <br />
+					<p style={{ textAlign: "center" }}>
+						<EquationsData text={equations[9]} display={false} />
+					</p>
 					<br />
-					<span>
-						<i>Formula for solving quadratic equation</i>
+					<br />
+					<span style={{ marginRight: "25%" }}>
+						<i>Completing the square</i>
 					</span>
-					<p>The formula for solving the quadratic equation</p>
+					This is when we write the quadratic in the form
 					<br />
+					<br />
+					<p style={{ textAlign: "center" }}>
+						<EquationsData text={equations[15]} display={false} />
+					</p>
 				</div>
 			</div>
 		</div>

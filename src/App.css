@@ -4,27 +4,21 @@
 	padding: 0;
 }
 
+.App {
+	background-color: rgb(75, 73, 73);
+}
+
 .container {
-	width: 70%;
+	width: 80%;
 	margin: auto;
+	background-color: white;
+	padding: 1.5rem 4.7rem;
 }
 
 .main-title {
 	color: black;
 	margin: 1rem 2rem;
 }
-
-/* li {
-	margin-left: 10px;
-	display: list-item;
-}
-
-ol > li:before {
-	counter-increment: list;
-	content: counter(list, lower-alpha) ") ";
-	position: absolute;
-	left: -1.4em;
-} */
 
 ol {
 	counter-reset: list;
@@ -43,4 +37,9 @@ ol > li:before {
 
 .key-points {
 	margin-left: 3rem;
+}
+
+.real-number-roots > p,
+.real-number-roots > li {
+	padding: 0.2rem 0px;
 }
